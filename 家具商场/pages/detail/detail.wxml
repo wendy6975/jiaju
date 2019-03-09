@@ -1,0 +1,41 @@
+<!--pages/detail/detail.wxml-->
+<view class='container'>
+  <swiper autoplay indicator-dots indicator-active-color='#F5B223' circular class='swiper'>
+    <swiper-item wx:for="{{detailimg}}" wx:key="index">
+      <image src='{{item.img_url}}'></image>
+    </swiper-item>
+  </swiper>
+  <view class='detail'>
+    <view class='title'>
+      <text>{{detaillist.title}}</text>
+    </view>
+    <view class='price'>
+      <text>￥{{detaillist.price}}</text>
+    </view>
+    <view class='del'>
+      <text>{{detaillist.title}}</text>
+    </view>
+    <view class='time'>
+      上架时间：<text>{{detaillist.shelf_time}}</text>
+    </view>
+    <view class='count'>
+      已售：<text>{{detaillist.sold_count}}</text>
+    </view>
+  </view>
+  <view class='add'>
+    <view class='addcount'>购买数量</view>
+    <view class='addbtn'>
+      <button bindtap='changeCount' data-i='-1' disabled='{{isdisabled}}'>-</button>
+      <input type='text' value='{{count}}' bindblur='getinput'></input>
+      <button bindtap='changeCount' data-i='1'>+</button>
+    </view>
+  </view>
+  <view class='order'>
+    <view class='shopcar' bindtap='addshopcar'>加入购物车</view>
+    <view class='buynow' bindtap='buynow'>立即购买</view>
+  </view>
+  <view  bindtap='toshopcar' class='tosc'>
+    <image src='/images/shopcar.png'></image>
+  </view>
+  
+</view>

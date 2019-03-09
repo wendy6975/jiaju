@@ -1,0 +1,63 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  background: #f6f6fa;
+}
+.user{
+  width: 100vw;
+  height: 40vh;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.user-img{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+}
+.user-img .usera{
+  width: 100%;
+  height: 100%;
+}
+.user-name{
+  font-size: 16px;
+}
+.myorder{
+  width: 100%;
+  height: 10vh;
+  background: #fff;
+  margin-top: 4vh; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img1{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 2%;
+}
+.img2{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 2%;
+}
+.txt{
+  width: 75%;
+  text-align: left;
+  font-size: 16px;
+}
+.myaddress{
+  margin-top: 1vh;
+  width: 100%;
+  height: 10vh;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

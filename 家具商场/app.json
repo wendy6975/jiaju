@@ -1,0 +1,45 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/address/address",
+    "pages/shopcar/shopcar",
+    "pages/add/add",
+    "pages/logs/logs",
+    "pages/orderlist/orderlist",
+    "pages/user/user",
+    "pages/detail/detail",
+    "pages/buynow/buynow",
+    "pages/upd/upd"
+  ],
+  "window": {
+    "backgroundTextStyle": "bolder",
+    "navigationBarBackgroundColor": "#F5B223",
+    "navigationBarTitleText": "家具时尚",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "selectedColor": "#F5B223",
+    "color": "#9A9A9A",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐",
+        "iconPath": "images/dianpu.png",
+        "selectedIconPath": "images/dianpu_s.png"
+      },
+      {
+        "pagePath": "pages/shopcar/shopcar",
+        "text": "购物车",
+        "iconPath": "images/gouwuche.png",
+        "selectedIconPath": "images/gouwuche_s.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user_s.png"
+      }
+    ]
+  }
+}

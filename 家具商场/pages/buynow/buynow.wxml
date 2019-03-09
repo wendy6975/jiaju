@@ -1,0 +1,32 @@
+<!--pages/buynow/buynow.wxml-->
+<view class='container'>
+  <view class='address'>
+    <image src='/images/dingw.png'></image>
+    <view>
+      <view>
+        <text>收货人：</text>
+        <text style='float:right'>17826826975</text>
+      </view>
+      <view class='adr'>
+        收货地址：兄弟国家健康的管理金融鸡蛋价格的击破附近的人兄弟国家健康的管理金融鸡蛋价格的击破附近的人
+      </view>
+    </view>
+  </view>
+  <view class='order' wx:for="{{list}}" wx:key="index">
+    <view class='ord1'>
+      <image src='{{item.img}}'></image>
+    </view>
+    <view class='ord2'>
+      <view class='title'>{{item.title}}</view>
+      <view class='price'>
+        <text>￥{{item.price}}</text>
+        <text style='float:right'>x {{item.count}}</text>
+      </view>
+      <view class='subtotal'>小计：{{item.subtotal}}</view>
+    </view>
+  </view>
+  <view class='submit'>
+    <view class='sum'>合计:<text>￥{{sum}}</text></view>
+    <view class='up' bindtap='buy'>提交订单</view>
+  </view>
+</view>

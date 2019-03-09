@@ -1,0 +1,44 @@
+/* pages/orderlist/orderlist.wxss */
+.order{
+  width: 94%;
+  height: 20vh;
+  border-radius: 20rpx;
+  background: #fff;
+  box-shadow: 0rpx 0rpx 10rpx #F5B223;
+  margin:20rpx auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.order>view{
+  height: 90%;
+}
+.ord1{
+  width: 30%;
+
+  display: flex;
+  justify-content: center;
+}
+.ord1>image{
+  width: 170rpx;
+  height: 170rpx;
+  margin: auto;
+}
+.ord2{
+  width: 70%;
+  font-size: 14px;
+}
+.title{
+  width: 98%;
+  height: 50%;
+
+}
+.price{
+  width: 98%;
+  height: 25%;
+
+  font-size: 14px;
+}
+.total{
+  width: 98%;
+}

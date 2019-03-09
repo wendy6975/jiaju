@@ -1,0 +1,19 @@
+<!--pages/user/user.wxml-->
+<view class='container'>
+  <view class='user'>
+    <view class='user-img'>
+      <image src='{{userInfo.avatarUrl}}' class='usera'></image>
+    </view>
+    <view class='user-name'>{{userInfo.nickName}}</view>
+  </view>
+  <view class='myorder' bindtap='toorder'>
+    <image src='/images/dingdan.png' class='img1'></image>
+    <text class='txt'>我的订单</text> 
+    <image src='/images/next.png' class='img2'></image>
+  </view>
+  <view class='myaddress' bindtap='toaddress'>
+    <image src='/images/ding.png' class='img1'></image>
+    <text class='txt'>我的地址</text> 
+    <image src='/images/next.png' class='img2'></image>
+  </view>
+</view>

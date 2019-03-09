@@ -1,0 +1,73 @@
+/* pages/address/address.wxss */
+.container{
+  margin-bottom:8vh; 
+}
+.adr{
+  width: 100%;
+  height: 14vh;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap; 
+  align-items: center;
+
+}
+.icon{
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.icon view{
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 50%;
+  background: #aaa;
+  color: #fff;
+  font-size: 16px;
+}
+.detail{
+  
+  box-sizing: border-box;
+  width: 78%;
+  height: 100%;
+
+  text-align: left;
+  font-size: 12px;
+  padding: 10rpx 15rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.name{
+  font-size: 14px;
+  margin-right: 20rpx;
+  margin-bottom: 10rpx;
+}
+.phone{
+  color: #888;
+}
+.edit{
+  width: 12%;
+  height: 30%;
+  line-height: 4.2vh;
+  border-left: 1rpx solid #ddd;
+  font-size: 12px;
+  float: right;
+  box-sizing: border-box;
+  color: #888;
+}
+.more{
+  width: 100%;
+  height: 8vh;
+  background: #F5B223;
+  text-align: center;
+  line-height: 8vh;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+}

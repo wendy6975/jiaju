@@ -1,0 +1,10 @@
+<!--pages/upd/upd.wxml-->
+<!--pages/add/add.wxml-->
+<view class='container'>
+  <view class="input">
+    <input type='text' value='{{name}}' bindblur='nam'></input>
+    <input type='text' class='phone' value='{{phone}}' bindblur='pho'></input>
+    <textarea value='{{address}}' bindblur='adr'></textarea>
+  </view>
+  <view class='save' bindtap='save'>保存</view>
+</view>

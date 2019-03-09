@@ -1,0 +1,38 @@
+<!--pages/shopcar/shopcar.wxml-->
+<view class='container'>
+  <view class='trash'>
+    <text>共{{length}}件宝贝</text>
+    <image src='/images/trash.png' bindtap="delmore"></image>
+  </view>
+  <view class='sclist' wx:for="{{shopcar}}" wx:key="index">
+    <checkbox-group bindchange="check" data-checked="{{item.checked}}" data-index="{{index}}">
+      <checkbox color='rgba(245, 164, 11, 1)' checked='{{item.checked}}'></checkbox>
+    </checkbox-group>
+    
+    <image src='{{item.pic}}'></image>
+    <view>
+      <view class='title'>{{item.title}}</view>
+      <view class='detail'>
+        <view class='price'>￥{{item.price}}</view>
+        <view class='count'>
+          <view>
+            <image src='/images/jian.png' bindtap='change' data-is="-1"  
+            data-item='{{item}}'></image>
+          </view>
+          <input type='text' value='{{item.count}}' bindblur='blur' data-item='{{item}}'></input>
+          <view>
+            <image src='/images/add2.png' bindtap='change' data-is="1" 
+          data-item='{{item}}'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='checkedall'>
+    <checkbox-group bindchange="checkedall" data-all="{{all}}">
+      <checkbox color='rgba(245, 164, 11, 1)' checked='{{all}}'>全选</checkbox>
+    </checkbox-group>
+    <view class='money'>总计:<text>￥{{sum}}</text></view> 
+    <view class='pay' bindtap='pay'>去结算({{ced.length}})</view>
+  </view>
+</view>

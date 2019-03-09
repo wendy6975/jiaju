@@ -1,0 +1,17 @@
+<!--pages/address/address.wxml-->
+<view class='container'>
+  <view class='adr' wx:for="{{adrlist}}" wx:key="index">
+    <view  class='icon'>
+      <view>{{item.fn}}</view>
+    </view>
+    <view class='detail'>
+      <view>
+        <text class='name'>{{item.name}}</text>
+        <text class='phone'>{{item.phone}}</text>
+      </view>
+      <view class='ad'>{{item.address}}</view>
+      </view>
+    <view class='edit' bindtap='update' data-del='{{item}}'>编辑</view>
+  </view>
+  <view class='more' bindtap='add'>添加地址</view>
+</view>

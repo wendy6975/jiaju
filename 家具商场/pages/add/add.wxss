@@ -1,0 +1,34 @@
+/* pages/add/add.wxss */
+.input{
+  font-size: 14px;
+}
+.input input{
+  background: #fff url('http://127.0.0.1:3000/img/sender.png')no-repeat 2% center;
+  background-size: 6%;
+  -sizing: border-box;
+  width: 100%;
+  height: 8vh;
+  padding-left: 80rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+.input .phone{
+  background: #fff url('http://127.0.0.1:3000/img/phone.png')no-repeat 2% center;
+  background-size: 6%;
+}
+.input textarea{
+  box-sizing: border-box;
+  width: 100%;
+  height: 25vh;
+  background: #fff;
+  padding: 30rpx;
+}
+.save{
+  width: 80%;
+  height: 8vh;
+  line-height: 8vh;
+  text-align: center;
+  margin: 50rpx auto;
+  background: #F5B223;
+  color: #fff;
+  border-radius: 50rpx;
+}

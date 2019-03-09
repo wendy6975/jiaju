@@ -1,0 +1,119 @@
+/* pages/detail/detail.wxss */
+.container{
+  width: 100vw;
+  height: 100vh;
+  background: #f6f6fa;
+}
+.swiper{
+  width: 100%;
+  height: 40vh;
+  
+}
+.swiper image{
+  width: 100%;
+  height: 100%;
+}
+.detail{
+  width: 100%;
+  height: 40vh;
+  padding-top: 20rpx;
+  
+}
+.title{
+  width: 99%;
+  color: #333;
+  margin: auto;
+  font-size: 16px;
+  font-weight: bold;
+}
+.price{
+  color: rgba(245, 164, 11, 1);
+  font-size: 20px;
+  margin-top: 20rpx;
+  font-weight: bold;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.del{
+  width: 99%;
+  font-size: 14px;
+  margin: 10rpx auto 0;
+}
+.time{
+  margin-top: 20rpx;
+  font-size: 15px;
+}
+.count{
+  margin-top: 20rpx;
+  font-size: 15px;
+}
+.add{
+  width: 100%;
+  height: 8vh;
+  background: #fff;
+  position: absolute;
+  bottom: 8vh;
+  display: flex;
+  justify-content: space-between;
+}
+.add view{
+  height: 100%;
+  line-height: 8vh;
+  
+  text-align: center;
+  font-size: 16px;
+}
+.addcount{
+  width: 25%;
+  
+}
+.addbtn{
+  width: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addbtn button{
+  width: 75rpx;
+  height: 75rpx;
+  background: #eee;
+  line-height: 75rpx;
+}
+.addbtn input{
+  width: 30%;
+  height: 75rpx;
+}
+.order{
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background: #333;
+}
+.order view{
+  width: 50%;
+  height:8vh;
+  line-height: 8vh;
+  color: #fff;
+  font-weight: 600;
+}
+.shopcar{
+  background: #f55d04;
+}
+.buynow{
+  background: #f5b223;
+}
+.container>.tosc{
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  right:2vw;
+  bottom: 30vh;
+  z-index: 20;
+}
+.tosc image{
+  width: 100%;
+  height: 100%;
+}

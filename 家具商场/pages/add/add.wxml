@@ -1,0 +1,13 @@
+<!--pages/add/add.wxml-->
+<view class='container'>
+  <view class="input">
+    <input type='text' placeholder='收货人' placeholder-style='color:#aaa' bindblur='nam'>
+      
+    </input>
+    <input type='text' placeholder='手机号码' placeholder-style='color:#aaa' bindblur='pho'
+      class='phone'></input>
+    <textarea placeholder='详细地址：如道路、门牌号、小区、楼栋号、单元室等'
+      placeholder-style='color:#aaa' bindblur='adr'></textarea>
+  </view>
+  <view class='save' bindtap='save'>保存</view>
+</view>

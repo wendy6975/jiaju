@@ -1,0 +1,21 @@
+<!--pages/orderlist/orderlist.wxml-->
+<view class='container'>
+  <view class='order' wx:for="{{list}}" wx:key="index">
+    <view class='ord1'>
+      <image src='{{item.img}}'></image>
+    </view>
+    <view class='ord2'>
+      <view class='title'>{{item.title}}</view>
+      <view class='price'>
+        <text>￥{{item.price}}</text>
+        <text style='float:right'>x {{item.count}}</text>
+      </view>
+      <view class='total'>
+        <text>小计：{{item.subtotal}}</text>
+        <text style='color:red;float:right'>交易成功</text>
+      </view>
+    </view>
+  </view>
+  
+</view>
+
